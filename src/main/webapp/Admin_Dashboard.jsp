@@ -20,13 +20,14 @@ header {
     text-align: center;
     font-size: 35px;
     color: white;
+    height: 300px;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
     float: left;
     width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 600px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
 }
@@ -42,14 +43,14 @@ article {
     padding: 20px;
     width: 30%;
     background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 600px; /* only for demonstration, should be removed */
 }
 article3 {
     float: right;
     padding: 20px;
     width: 39.5%;
     background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+    height: 600px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -62,7 +63,7 @@ section:after {
 /* Style the footer */
 footer {
     background-color: #777;
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     color: white;
 }
@@ -74,7 +75,40 @@ footer {
         height: auto;
     }
 }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 150%;
+	padding: 10px 5px;
+	margin: 10px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+	
+/* Extra styles for the cancel button */
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
 </style>
+
 </head>
 <body>
   <h2 align="center" style="color: green; font-family: fantasy;font-size: xx-large;" >Add In charge</h2>
@@ -84,7 +118,7 @@ footer {
   <h4 align="center">Select In charge Photo*</h4>
    <img id="blah" src="#" alt="preview image" style="width: 50px;height: 50px;" />
   <input type="file" name="pic" accept="image/*">
-  <input type="submit" value="Submit">
+  <button type="submit">Submit</button>
   
   </nav>
   
@@ -100,7 +134,7 @@ footer {
     </tr>
     
     <tr>
-	<td><input type="email" placeholder="Email"/></td>
+	<td><input type="text" placeholder="Email"/></td>
     </tr>
     
     <tr>
@@ -116,7 +150,7 @@ footer {
     </tr>
     
     <tr>
-	<td><input type="submit" value="Register"/></td>
+	<td><button type="submit">Register</button></td>
     </tr>
     
     </table>
@@ -134,7 +168,6 @@ footer {
 </section>
 
 <footer>
- <input type="submit" value="Logout" style="font-family: sans-serif;">
  </footer>
 
 </body>
