@@ -13,7 +13,13 @@
 		<mysql.connector.version>5.1.9</mysql.connector.version>
 	</properties>
 
+
 	<dependencies>
+		<dependency>
+			<groupId>javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.12.1.GA</version>
+		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -35,7 +41,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>4.3.2.Final</version>
+			<version>3.6.0.Final</version>
 		</dependency>
 		<!-- MySQL database driver -->
 		<dependency>

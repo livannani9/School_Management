@@ -156,23 +156,22 @@ to {
 
 	<div id="id01" class="modal">
 
-		<form class="modal-content animate" action="/action_page.php">
+		<form class="modal-content animate" action="admin_login" method="post">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'"
-					class="close" title="Close Modal">&times;</span> <img
-					src="img_avatar2.png" alt="Avatar" class="avatar">
+					class="close" title="Close Modal">&times;</span> 
+					
 			</div>
 
 			<div class="container">
-				<label for="uname"><b>Username</b></label> <input type="text"
-					placeholder="Enter Username" name="uname" required> <label
+				<label for="uname"><b>Username</b></label>
+				 <input type="text"
+					placeholder="Enter Username" name="admin_username" required> <label
 					for="psw"><b>Password</b></label> <input type="password"
-					placeholder="Enter Password" name="psw" required>
+					placeholder="Enter Password" name="admin_password" required>
 
-				<button type="submit">Login</button>
-				<label> <input type="checkbox" checked="checked"
-					name="remember"> Remember me
-				</label>
+				<button type="submit">Login Admin</button>
+				
 			</div>
 
 			<div class="container" style="background-color: #f1f1f1">
@@ -345,8 +344,7 @@ to {
 		<form class="modal-content animate" action="/action_page.php">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id02').style.display='none'"
-					class="close" title="Close Modal">&times;</span> <img
-					src="img_avatar2.png" alt="Avatar" class="avatar">
+					class="close" title="Close Modal">&times;</span> 
 			</div>
 
 			<div class="container">
